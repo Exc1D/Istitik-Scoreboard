@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Avi's Scoreboard</title>
+</head>
+<script src="script.js"></script>
+<div id="binder">
+    <div id="outer-frame">
+    <div class="score-frame">
+        <div class="score-outer">
+            <div class="score-inner">
+                <div class="score-label"><h3>HOME</h3></div>
+                <div class="score-box"><h4 id="home-score">0</h4></div>
+            </div>
+            <div class="foul-to-row">
+                <div class="foul-frame">
+                    <div class="foul-label">FOUL</div>
+                    <div class="foul-box"><h4 id="home-fouls">00</h4></div>
+                </div>
+                <div class="to-frame">
+                    <div class="to-label">TO</div>
+                    <div class="to-box"><h4 id="home-to">00</h4></div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div id="time-frame">
+        <div id="inner-time">
+            <div id="time-label"><h5 id="timee">12:00</h5></div>
+            <div id="period-frame">
+                <div id="period-label">
+                    <h3>PERIOD</h3>
+                </div>
+                <div id="period-box">
+                    <h4 id="period">1</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="score-frame">
+        <div class="score-outer">
+            <div class="score-inner">
+                <div class="score-label"><h3>AWAY</h3></div>
+                <div class="score-box"><h4 id="away-score">0</h4></div>
+            </div>
+            <div class="foul-to-row">
+                <div class="foul-frame">
+                    <div class="foul-label">FOUL</div>
+                    <div class="foul-box"><h4 id="away-fouls">00</h4></div>
+                </div>
+                <div class="to-frame">
+                    <div class="to-label">TO</div>
+                    <div class="to-box"><h4 id="away-to">00</h4></div>
+                </div>
+            </div>
+         </div>
+    </div>
+    </div>
+    <div id="controls-frame">
+        <div class="score-btn">
+            <div class="btn-label">
+                <button class="add1" onclick="homeAdd1()">+1</button>
+                <button class="add2" onclick="homeAdd2()">+2</button>
+                <button class="add3" onclick="homeAdd3()">+3</button>
+            </div>
+            <button class="reset-score" onclick="homeReset()">Reset</button>
+        </div>
+        <div class="foul-btn">
+            <button class="add-foul" onclick="homeFoulAdd()">Foul</button>
+            <button class="reset-foul" onclick="homeFoulReset()">Reset</button>
+        </div>
+        <div class="to-btn">
+            <button class="add-to" onclick="homeToAdd()">TO+</button>
+            <button class="minus-to" onclick="homeToMinus()">TO-</button>
+        </div>
+        <div id="time-btn">
+            <button id="start-time" onclick="startTimee()">|></button>
+            <button id="stop-time" onclick="stopTimee()">||</button>
+            <button id="reset-time" onclick="resetTimee()">Reset</button>
+        </div>
+        <div id="period-btn">
+            <button id="add-period" onclick="addPeriod()">Q+</button>
+            <button id="minus-period" onclick="minusPeriod()">Q-</button>
+        </div>
+        <div class="foul-btn">
+            <button class="add-foul" onclick="awayFoulAdd()">Foul</button>
+            <button class="reset-foul" onclick="awayFoulReset()">Reset</button>
+        </div>
+        <div class="to-btn">
+            <button class="add-to" onclick="awayToAdd()">TO+</button>
+            <button class="minus-to" onclick="awayToReset()">TO-</button>
+        </div>
+        <div class="score-btn">
+            <div class="btn-label">
+                <button class="add1" onclick="awayAdd1()">+1</button>
+                <button class="add2" onclick="awayAdd2()">+2</button>
+                <button class="add3" onclick="awayAdd3()">+3</button>
+            </div>
+            <button class="reset-score" onclick="awayReset()">Reset</button>
+        </div>
+    </div>
+</div>
+</html>
